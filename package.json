@@ -1,0 +1,16 @@
+{
+  "name": "praktikum05-webservice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Praktikum 05 WSE - Katalog Perpustakaan Kampus",
+  "scripts": {
+    "start": "node server.cjs",
+    "docs": "node scripts/generate-openapi.cjs",
+    "check": "node --check app.cjs && node --check server.cjs && node --check client.cjs && node --check public/app.js && node --check scripts/generate-openapi.cjs && node --test tests/*.test.cjs",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "swagger-ui-express": "5.0.1"
+  }
+}
